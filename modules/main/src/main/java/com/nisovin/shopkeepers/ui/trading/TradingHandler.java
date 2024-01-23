@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+import com.nisovin.shopkeepers.api.internal.util.annotations.NonNullByDefault;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Statistic;
@@ -813,7 +814,7 @@ public class TradingHandler extends AbstractShopkeeperUIHandler {
                 && nmsItemCompareResult1
                 && nmsItemCompareResult2);
     }
-
+    @NonNull
     protected ItemStack standardIt(ItemStack stack){
         stack = stack.clone();
         if(!stack.hasItemMeta()){
